@@ -52,3 +52,25 @@
   border-color: rgba(232, 189, 128, .4);
   box-shadow: 0 20px 70px rgba(0, 0, 0, .35);
 }
+
+/* Pricing and additional services */
+.price-note{display:block;margin-top:7px;color:#f2d8b0;font-size:13px;line-height:1.5;font-weight:600;text-shadow:0 1px 8px rgba(0,0,0,.3)}
+.extra-services{padding:100px 7%;background:radial-gradient(ellipse at 15% 0%,rgba(190,145,88,.16),transparent 42%),#17110e;color:#f8eee0}
+.extra-heading{max-width:760px;margin:0 auto 48px;text-align:center}
+.extra-heading h2{font-family:var(--serif);font-size:clamp(38px,5vw,64px);margin:10px 0 15px}
+.extra-heading>p:last-child{color:rgba(248,238,224,.72);line-height:1.8}
+.service-grid{max-width:1320px;margin:auto;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.service-card{position:relative;min-height:190px;padding:28px;border:1px solid rgba(226,190,139,.28);border-radius:18px;background:linear-gradient(145deg,rgba(255,255,255,.075),rgba(255,255,255,.018));box-shadow:0 15px 45px rgba(0,0,0,.13)}
+.service-kicker{font-size:10px;letter-spacing:.22em;color:#d9b783;font-weight:800}
+.service-card h3{font-family:var(--serif);font-size:25px;line-height:1.2;margin:20px 0 12px}
+.service-card strong{font-size:23px;color:#e8c895}
+.service-card p{margin:8px 0 0;color:rgba(248,238,224,.68);font-size:13px}
+.booking-notes{padding:55px 7% 65px;background:#211710;color:#f8eee0;border-top:1px solid rgba(226,190,139,.2)}
+.booking-notes>div{display:flex;align-items:center;gap:14px;max-width:900px;margin:0 auto 22px}
+.booking-notes h2{font-family:var(--serif);font-size:34px;margin:0}
+.note-icon{color:#e8c895;font-size:26px}
+.booking-notes>p{max-width:900px;margin:12px auto;color:rgba(248,238,224,.83);line-height:1.7}
+.booking-notes>p strong{color:#e8c895}
+.booking-notes .fine-print{font-size:12px;color:rgba(248,238,224,.5);margin-top:22px}
+@media(max-width:900px){.service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.extra-services{padding:70px 6%}.service-grid{grid-template-columns:1fr;gap:12px}.service-card{min-height:150px;padding:23px}.booking-notes{padding:42px 6%}.booking-notes h2{font-size:29px}}
